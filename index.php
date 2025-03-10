@@ -146,31 +146,56 @@
  * array_unshift($numbers,10);
  * array_shift($numbers);
  * array_pop($numbers);
+ * array_search(5,$numbers)
+ * array_sum($numbers)
+ * array_slice($numbers,0,2)
+ * array_splice($numbers,1,1,[10,11])
+ * array_merge($africa,$aisa,$europ)
+ * array_reverse($africa)
+ * sort($numbers)
+ * 
+ * Functions
+ * 
+ * @param no params
+ * @return void
+ * 
+ * function sayHello(){
+ *   echo "Hello";
+ * }
+ * 
+ * @param $username string param
+ * 
+ * @return viod
+ * 
+ * function sayHello($username){
+ * echo "Hello $username";
+ * echo 'Hello '.$username; //concat using operator dot 'string'.'another string'
+ *}
+ * 
+ * @param $number1 as int|float
+ * @param $number2 as int|float
+ * 
+ * @return int|float
+ * 
+ * function sum($number1,$number2)
+ *{
+ *   return $number1+$number2;
+ *}
+ * 
  */
 
-$numbers = [1, 2, 3, 4];
+//Assotcivie 
+$student_data = [
+    
+        'id' => 1,
+        'student_name' => 'Mohamed',
+        'Student_age' => 35
+    
+];
 
-// echo count($numbers); //print number of items
 
-// echo $numbers[0]; //print the value of index 0
-
-// $numbers[0]=5; //change the value of index 0
-
-// echo $numbers[0]; //print the value of index 0
-
-// array_push($numbers,10);
-// array_unshift($numbers,12);
-// print_r($numbers);
-
-// echo "new <br>";
-// array_shift($numbers);
-// array_pop($numbers);
-
-// print_r($numbers);
-
-// array loop
-
-foreach ($numbers as $hbozo) {
+foreach ($student_data as $key => $value) {
     # code...
-    echo $hbozo;
+
+    echo "$key : $value <br>";
 }
