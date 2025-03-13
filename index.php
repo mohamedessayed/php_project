@@ -181,21 +181,10 @@
  *{
  *   return $number1+$number2;
  *}
- * 
+ * Assotcivie
+ * $student_data = [
+ *       'id' => 1,
+ *       'student_name' => 'Mohamed',
+ *       'Student_age' => 35   
+ *];
  */
-
-//Assotcivie 
-$student_data = [
-    
-        'id' => 1,
-        'student_name' => 'Mohamed',
-        'Student_age' => 35
-    
-];
-
-
-foreach ($student_data as $key => $value) {
-    # code...
-
-    echo "$key : $value <br>";
-}
