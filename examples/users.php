@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (isset($_SESSION['message'])) {
+    # code...
+$message= $_SESSION['message'];
+unset($_SESSION['message']);
+}
 
 $users = [
     [
@@ -37,9 +44,19 @@ $users = [
 <body>
 
     <section class="container my-5">
+
+    <?php if(isset($message)){?>
+    <div class="alert alert-success" role="alert">
+        <?php echo isset($message)? $message:'';?>
+    </div>
+
+    <?php } ?>
+
         <div class="my-3">
             <a class="btn btn-primary" href="./create.php">Create user</a>
         </div>
+
+
         <h1>Users table</h1>
 
         <table class="table">

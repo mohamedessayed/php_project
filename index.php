@@ -187,4 +187,10 @@
  *       'student_name' => 'Mohamed',
  *       'Student_age' => 35   
  *];
+ *
+ * Session
+ * session_start() => start nes session
+ * session_unset() => remove all variables
+ * session_abort()=> destroy session
+ * session_destroy()=>
  */
